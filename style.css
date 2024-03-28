@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#submit {
+    width: 100px;
+}
+
+input:invalid {
+    background-color: pink;
+}
+
+.error {
+    padding: 0;
+}
+
+.active {
+    padding: 0.3rem;
+    color: red;
+}

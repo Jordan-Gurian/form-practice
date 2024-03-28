@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form novalidate>
+        <label for="mail">Email
+            <input id="mail" type="email" minlength="8"  required>
+            <span class="error email" aria-live="polite"></span>
+        </label>
+        <label for="country">Country
+            <select id="country" required>
+                <option value="ch">Switzerland</option> 
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="nl">The Netherlands</option>
+            </select>
+            <span class="error country" aria-live="polite"></span>
+        </label>
+        <label for="zip">Zip
+            <input id="zip" type="text" required>
+            <span class="error zip" aria-live="polite"></span>
+        </label>
+        <label for="password">Password
+            <input id="password" type="password" required>
+            <span class="error password" aria-live="polite"></span>
+        </label>
+        <label for="confirmation">Confirmation
+            <input id="confirmation" type="password" required>
+            <span class="error confirmation" aria-live="polite"></span>
+        </label>
+        <input id="submit" type="submit" value="Submit">
+            <span class="error submit" aria-live="polite"></span>
+    </form>
+    
+    <script src="index.js"></script>
+</body>
+</html>
